@@ -3,19 +3,15 @@ class SwitchButton {
         this.status = status;
         this.lamp = lamp
     }
-    connect() {
-        alert("bong de da ket noi voi cong tac");
-    }
-    turnOn(lamp) {
-        this.status = true;
-        alert("Bat cong tac");
-        lamp.turnOn();
-    }
-    turnOff(lamp) {
-        this.status = false;
-        alert("Tat cong tac");
-        lamp.turnOff();
-    }
+   setElectricLamp(Lamp){
+        this.lamp = Lamp;
+   }
+   turnOn(){
+        this.lamp.turnOn();
+   }
+   turnOff(){
+        this.lamp.turnOff();
+   }
 
 }
 let ct = new SwitchButton ()
