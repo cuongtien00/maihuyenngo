@@ -1,4 +1,8 @@
 class FlashLamp {
+    constructor(status,battery){
+        this.status = status
+        this.battery = battery;
+    }
     setBattery(Battery) {
         this.battery = Battery
 
@@ -14,6 +18,7 @@ class FlashLamp {
     }
     turnOn(){
         this.status = true;
+        this.battery.decreaseEnergy()
     }
     turnOff(){
         this.status = false;

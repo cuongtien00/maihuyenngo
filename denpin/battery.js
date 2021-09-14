@@ -14,4 +14,4 @@ class Battery {
         }
     }
 }
-let battery = new Battery();
+let battery = new Battery(10);
