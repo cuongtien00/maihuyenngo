@@ -14,15 +14,28 @@
                 check = true;
             }
         }
-
+let index = arr.indexOf(int)
         if (check == true) {
-            alert(int + " Nằm trong mảng đã cho ");
+            alert(int + " Nằm trong mảng đã cho tại vị trí " + index);
         }
         else {
-            alert(int + " Khong nam trong mang");
+            alert(int + " Không nằm trong mảng.");
         }
     }
     findIndex(prompt("Moi nhap so can tim"),[1,2,3,4,5,6,7]);
 </script>
+<!--Cách 2-->
+<!--<script>-->
+<!--    function findIndex(int,arr) {-->
+<!--        int = parseInt(int);-->
+<!--        let index = arr.indexOf(int)-->
+<!--        if (arr.indexOf(int) !== -1) {-->
+<!--            alert(int + " Nằm trong mảng đã cho tại vị trí " + index);-->
+<!--        }-->
+<!--        else {-->
+<!--            alert(int + " Không nằm trong mảng.");-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
 </body>
 </html>
